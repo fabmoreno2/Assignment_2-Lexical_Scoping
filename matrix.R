@@ -1,18 +1,13 @@
-## This assignment is about solving the inverse of a matrix by caching the 
-# result within a lexical scope of a function:  "makeCacheMatrix" and 
+## I'm solving the inverse of a matrix by caching the 
+# result within a lexical scope of the function "makeCacheMatrix" and 
 # "cacheSolve". Caching is about using memory to avoid excess computation.
 # Lexical scopes, allow to create functions within a function and new 
 # "user defined" objects (data types) to store data within several environments
-###################################
-
-###################################
-## The function "makeCacheMatrix" creates a new, unique environment. 
+## The function "makeCacheMatrix" creates a new environment. 
 # The inverse matrix is cached inside the object m, within the main 
 # environment, which is unique for EACH instance the function is called.
-## The output of the function is a list with 5 named elements, which are 
-# the five functions defined herein: setmatrix, getmatrix, setinverse, 
-# getinverse and getenv
-###################################
+## The output of the function is a list with 5 named elements: setmatrix, getmatrix, 
+# setinverse, getinverse and getenv
 
 makeCacheMatrix <- function(x = matrix()) {
 # Example input: Insert matrix e.g x<-matrix(rnorm(64),8,8)
